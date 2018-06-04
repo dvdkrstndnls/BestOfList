@@ -32,7 +32,7 @@ We are utilizing the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHeroku
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer. NOT DONE
+1. Create a GitHub repo called `burger` and clone it to your computer. DONE
 
 2. Make a package.json file by running `npm init` from the command line. DONE
 
