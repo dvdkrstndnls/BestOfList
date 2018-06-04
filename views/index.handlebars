@@ -1,0 +1,38 @@
+<h1>'Best of' Items</h1>
+
+<h2>Songs I am considering for 'Best of...' this Year</h2>
+
+<ul>
+  {{#each list}}
+    {{#unless removed}}
+      {{> list/list-block removed=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Songs I have decided to remove from my list:</h2>
+
+<ul>
+  {{#each list}}
+    {{#if removed}}
+      {{> list/list-block removed=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Song to my list</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Song Name:</label>
+    <input type="text" id="ca" name="song">
+  </div>
+
+  <div class="form-group">
+    <label for="removed">Remove?</label><br>
+    <input type="radio" name="removed" value="1" checked> Removed!<br>
+    <input type="radio" name="removed" value="0"> Current Choice
+  </div>
+
+  <button type="submit">Add Song</button>
+</form>

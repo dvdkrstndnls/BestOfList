@@ -1,0 +1,26 @@
+{
+  "name": "bestoflist",
+  "version": "1.0.0",
+  "description": "A place for users to create and edit their Best of Lists as the year progresses",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "music",
+    "orm",
+    "handlebars",
+    "javascript",
+    "js"
+  ],
+  "author": "david daniels",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "inquirer": "^5.2.0",
+    "mysql": "^2.15.0"
+  }
+}
