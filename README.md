@@ -6,7 +6,7 @@ Simple app allowing users to create a 'Best Of..." Song List and have other user
 
 ### Overview
 
-In this assignment, we've created Music Best of List (similar to a burger logger) with MySQL, Node, Express, Handlebars and a homemade ORM. We are following the MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
+In this assignment, we've created Music Best of List (similar to a burger logger) with MySQL, Node, Express, Handlebars and an ORM. We are following the MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
 ### Important
 
@@ -32,36 +32,36 @@ We are utilizing the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHeroku
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer. DONE
+1. Created a GitHub repo called `burger` and clone it to your computer. DONE
 
-2. Make a package.json file by running `npm init` from the command line. DONE
+2. Made a package.json file by running `npm init` from the command line. DONE
 
-3. Install the Express npm package: `npm install express`.  DONE
+3. Installed the Express npm package: `npm install express`.  DONE
 
-4. Create a server.js file. DONE
+4. Created a server.js file. DONE
 
-5. Install the Handlebars npm package: `npm install express-handlebars`. DONE
+5. Installed the Handlebars npm package: `npm install express-handlebars`. DONE
 
-6. Install the body-parser npm package: `npm install body-parser`. DONE
+6. Installed the body-parser npm package: `npm install body-parser`. DONE
 
-7. Install MySQL npm package: `npm install mysql`. DONE
+7. Installed MySQL npm package: `npm install mysql`. DONE
 
-8. Require the following npm packages inside of the server.js file: DONE
+8. Required the following npm packages inside of the server.js file: DONE
    * express
    * body-parser
 
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`. DONE
+1. Inside your `burger` directory, created a folder named `db`. DONE
 
-2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following: DONE
+2. In the `db` folder, created a file named `schema.sql`. Write SQL queries this file that do the following: DONE
 
-   * Create the `burgers_db`.
-   * Switch to or use the `burgers_db`.
+   * Create the `burgers_db`.DONE
+   * Switch to or use the `burgers_db`.DONE
    * Create a `burgers` table with these fields:
-     * **id**: an auto incrementing int that serves as the primary key.
-     * **burger_name**: a string.
-     * **devoured**: a boolean.
+     * **id**: an auto incrementing int that serves as the primary key.DONE
+     * **burger_name**: a string.DONE
+     * **devoured**: a boolean.DONE
 
 3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries. DONE
 
