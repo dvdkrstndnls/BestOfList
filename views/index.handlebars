@@ -1,29 +1,35 @@
-<h1>'Best of' Items</h1>
-
-<h2>Songs I am considering for 'Best of...' this Year</h2>
-
-<ul>
-  {{#each list}}
-    {{#unless liked}}
-      {{this.song}}
-      {{!-- {{> list/list-block removed=true}} --}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="w3-container w3-teal">
+<h1>SONGS: The Best of 2018</h1>
+</div>
 
 {{!-- consider chainging this to 'liked by other users' --}}
-<h2>Songs liked:</h2>
+<h3>Most UP Voted Songs:</h3>
 
 <ul>
   {{#each list}}
     {{#if liked}}
       {{this.song}}
+      <br> 
       {{!-- {{> list/list-block removed=false}} --}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Song to my 'Best of' list</h2>
+
+<h3>Most DOWN Voted Songs:</h3>
+
+<ol>
+  {{#each list}}
+    {{#unless liked}}
+      {{this.song}}
+    <br>
+    {{/unless}}
+  {{/each}}
+</ol>
+
+
+
+<h3>Have your voice be heard on this year's 'Best of' list!</h3>
 <form class="create-form">
 
   <div class="form-group">
@@ -32,9 +38,9 @@
   </div>
 
   <div class="form-group">
-    <label for="like">Like</label><br>
-    <input type="radio" name="liked" value="1" checked> Like!<br>
-    <input type="radio" name="liked" value="0"> Liked
+    <label for="like"></label><br>
+    <input type="radio" name="liked" value="1" checked> Up Vote!<br>
+    <input type="radio" name="liked" value="0"> Down Vote
   </div>
 
   <button type="submit">Add Song</button>
