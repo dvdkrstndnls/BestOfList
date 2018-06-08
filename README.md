@@ -95,9 +95,9 @@ We are utilizing the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHeroku
 
    * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-     * `selectAll()` NOT DONE
-     * `insertOne()` NOT DONE
-     * `updateOne()` NOT DONE
+     * `selectAll()`  DONE
+     * `insertOne()`  DONE
+     * `updateOne()`  DONE
 
    * Export the ORM object in `module.exports`. DONE
 
@@ -115,20 +115,20 @@ We are utilizing the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHeroku
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `burger` directory, create a folder named `controllers`. DONE
 
-2. In `controllers`, create the `burgers_controller.js` file.
+2. In `controllers`, create the `burgers_controller.js` file. DONE, list_controller
 
 3. Inside the `burgers_controller.js` (list_controller) file, import the following:
 
    * Express DONE
-   * `burger.js` DONE BUT MAYBE WRONG
+   * `burger.js` DONE BUT perhaps WRONG
 
 4. Create the `router` for the app, and export the `router` at the end of your file. DONE
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside your `burger` directory, create a folder named `views`. DONE
 
    * Create the `index.handlebars` file inside `views` directory. DONE
 
@@ -136,9 +136,10 @@ We are utilizing the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHeroku
 
      * Create the `main.handlebars` file inside `layouts` directory. DONE
 
-     * Setup the `main.handlebars` file so it's able to be used by Handlebars. DONE? PROBLT NOT.
+     * Setup the `main.handlebars` file so it's able to be used by Handlebars. DONE? 
 
      * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+     DONE but REMOVED not yet changed to LIKED
 
      * Create a button in `index.handlebars` that will submit the user input into the database.
 

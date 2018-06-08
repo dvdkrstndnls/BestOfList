@@ -5,7 +5,7 @@
 
     //import express
    var express = require("express");
-   var listImport = require("expressburger.js"); //this part is probly wrong
+   var listImport = require("listitem.js"); //this part is perhaps wrong?
    //create router for app
    var router = express.Router();
 
