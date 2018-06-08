@@ -1,16 +1,12 @@
 // Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 
-
-
-
-
+//select everything (all the things that are in the table, create add )
 //use some of the following?????
-
 
 var listItem = {
   all: function(cb) {
-    orm.all("list", function(res) {
+    orm.select("list", function(res) {
       cb(res);
     });
   },

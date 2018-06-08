@@ -4,24 +4,26 @@
 
 <ul>
   {{#each list}}
-    {{#unless removed}}
-      {{> list/list-block removed=true}}
+    {{#unless liked}}
+      {{this.song}}
+      {{!-- {{> list/list-block removed=true}} --}}
     {{/unless}}
   {{/each}}
 </ul>
 
 {{!-- consider chainging this to 'liked by other users' --}}
-<h2>Songs I have decided to remove from my list:</h2>
+<h2>Songs liked:</h2>
 
 <ul>
   {{#each list}}
-    {{#if removed}}
-      {{> list/list-block removed=false}}
+    {{#if liked}}
+      {{this.song}}
+      {{!-- {{> list/list-block removed=false}} --}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Song to my list</h2>
+<h2>Add a Song to my 'Best of' list</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -31,8 +33,8 @@
 
   <div class="form-group">
     <label for="like">Like</label><br>
-    <input type="radio" name="removed" value="1" checked> Like!<br>
-    <input type="radio" name="removed" value="0"> Current Choice
+    <input type="radio" name="liked" value="1" checked> Like!<br>
+    <input type="radio" name="liked" value="0"> Liked
   </div>
 
   <button type="submit">Add Song</button>

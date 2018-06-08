@@ -1,11 +1,11 @@
-//3. Inside the `burgers_controller.js` file, import the following:
+//3. Inside the `list_controller.js` file, import the following:
 
   // * Express
    // * `burger.js`
 
     //import express
    var express = require("express");
-   var listImport = require("listitem.js"); //this part is perhaps wrong?
+ 
    //create router for app
    var router = express.Router();
 

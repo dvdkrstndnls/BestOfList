@@ -7,23 +7,20 @@ var connection = require("../config/connection.js");
 
 // * `selectAll()` DONE?
 var orm = {
-    select: function(whatToSelect, tableInput) {
-        var queryString = "SELECT ?? FROM ??";
-        connection.query(queryString, [whatToSelect, tableInput], function(err, result) {
+    select: function(whatToSelect, cb) {
+        var queryString = "SELECT * FROM " + whatToSelect + ";";
+        connection.query(queryString, function(err, result) {
           if (err) throw err;
           console.log(result);
+          cb(result);
         });
+       
       },
     // * `insertOne()` DONE?
     create: function(table, cols, vals, cb) {
-        var queryString = "INSERT INTO " + table;
+        var queryString = "INSERT INTO list (song) VALUES ('"+ vals + "');";
     
-        queryString += " (";
-        queryString += cols.toString();
-        queryString += ") ";
-        queryString += "VALUES (";
-        queryString += printQuestionMarks(vals.length);
-        queryString += ") ";
+  
     
         console.log(queryString);
     
